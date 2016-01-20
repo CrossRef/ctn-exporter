@@ -36,7 +36,7 @@ Then
 
     python main.py status
 
-You can run this every hour or so to check on the status of the deposits. Wait up to 24 hours before looking for your CTNs in the Crossref API.
+You can run `update` every hour or so to check on the status of the deposits. Status is one of `submitted`, `failed` or `completed`. Wait up to 24 hours after `completed` before looking for your CTNs in the Crossref API.
 
 ## Extending
 
