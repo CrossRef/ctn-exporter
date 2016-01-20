@@ -1,4 +1,4 @@
-from util import extract_ctn, session, connection, cursor, SUBMITTED, NOT_DEPOSITED
+from util import extract_ctn, session, connection, cursor, insert_ctn, SUBMITTED, NOT_DEPOSITED
 import xml.etree.ElementTree as ET
 
 PAGE_SIZE = 40
@@ -25,9 +25,7 @@ def fetch_page(page_number):
       extracted_ctns = extract_ctn(ctn_input.text)
 
       for [ctn, registry_doi] in extracted_ctns:
-        if cursor.execute("select count(*) from ctns where ctn = ? and doi = ?", [ctn, work_doi]).fetchone()[0] == 0:
-          cursor.execute("insert into ctns (ctn, registry, doi, status) values (?,?,?,?)", [ctn, registry_doi, work_doi, NOT_DEPOSITED])
-          connection.commit()
+        insert_ctn(ctn, registry_doi, work_doi)
 
 def fetch_pages():
   """Iterate over all pages in the API and extract CTNs."""

@@ -40,3 +40,10 @@ def extract_ctn(text):
         matches.append((tidied, doi))
 
   return set(matches)
+
+def insert_ctn(ctn, registry_doi, work_doi):
+  """Insert a CTN, registry  for a given DOI. May be called repeatedly, won't create duplicates."""
+  
+  if cursor.execute("select count(*) from ctns where ctn = ? and doi = ?", [ctn, work_doi]).fetchone()[0] == 0:
+    cursor.execute("insert into ctns (ctn, registry, doi, status) values (?,?,?,?)", [ctn, registry_doi, work_doi, NOT_DEPOSITED])
+    connection.commit()
