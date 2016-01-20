@@ -1,0 +1,85 @@
+[{
+     "regular-expression-relaxed": "u[ -]?[\\d-]+",
+     "regular-expression-strict": "u[\\d-]+",
+     "regular-expression-cleanup": ["u[ -]([\\d-]+)", "u\\1"],
+     "doi": "10.18810/utn"},
+
+    {"regular-expression-relaxed": "nct[ -]?\\d+",
+     "regular-expression-strict": "nct\\d+",
+     "regular-expression-cleanup": ["nct[ -](\\d+)", "nct\\1"],
+     "doi": "10.18810/clinical-trials-gov"},
+
+    {"regular-expression-relaxed": "isrctn[ -]?\\d+",
+     "regular-expression-strict": "isrctn\\d+",
+     "regular-expression-cleanup": ["isrctn[ -](\\d+)", "isrctn\\1"],
+     "doi": "10.18810/isrctn"},
+
+    {"regular-expression-relaxed": "actrn[ -]?\\d+",
+     "regular-expression-strict": "actrn\\d+",
+     "regular-expression-cleanup": ["actrn[ -](\\d+)", "actrn\\1"],
+     "doi": "10.18810/anzctr"},
+    
+    {"regular-expression-relaxed": "drks[ -]?\\d+",
+     "regular-expression-strict": "drks\\d+",
+     "regular-expression-cleanup": ["drks[ -](\\d+)", "drks\\1"],
+     "doi": "10.18810/drks"},
+
+    {"regular-expression-relaxed": "chictr[ -]?[-a-z]+-\\d+",
+     "regular-expression-strict": "chictr-[-a-z]+-\\d+",
+     "regular-expression-cleanup": ["chictr[ -]?([a-z][-a-z]+)", "chictr-\\1"],
+     "doi": "10.18810/chictr"},
+
+    {"regular-expression-relaxed": "rbr[ -]?\\d+",
+     "regular-expression-strict": "rbr\\d+",
+     "regular-expression-cleanup": ["rbr[ -](\\d+)", "rbr\\1"],
+     "doi": "10.18810/rebec"},
+
+    {"regular-expression-relaxed": "ntr[ -]?[-0-9]+",
+     "regular-expression-strict": "ntr[-0-9]+",
+     "regular-expression-cleanup": ["ntr[ -](\\d+)", "ntr\\1"],
+     "doi": "10.18810/dutch-trial-register"},
+
+    {"regular-expression-relaxed": "ctri[ -]?[\\d/]+",
+     "regular-expression-strict": "ctri[\\d/]+",
+     "regular-expression-cleanup": ["ctri[ -]([\\d/]+)", "ctri\\1"],
+     "doi": "10.18810/clinical-trial-registry-india"},
+    
+    {"regular-expression-relaxed": "umin[ -]?\\d+",
+     "regular-expression-strict": "umin\\d+",
+     "regular-expression-cleanup": ["umin[ -](\\d+)", "umin\\1"],
+     "doi": "10.18810/umin-japan"},
+
+    {"regular-expression-relaxed": "pactr[ -]?\\d+",    
+     "regular-expression-strict": "pactr\\d+",
+     "regular-expression-cleanup": ["pactr[ -](\\d+)", "pactr\\1"],
+     "doi": "10.18810/pactr"},
+
+    {"regular-expression-relaxed": "crd[ -]?\\d+",
+     "regular-expression-strict": "crd\\d+",
+     "regular-expression-cleanup": ["crd[ -](\\d+)", "crd\\1"],
+     "doi": "10.18810/prospero"},
+    
+    {"regular-expression-relaxed": "slctr[ -]?[\\d/]+",
+     "regular-expression-strict": "slctr[\\d/]+",
+     "regular-expression-cleanup": ["slctr[ -]([\\d/]+)", "slctr\\1"],
+     "doi": "10.18810/slctr"},
+
+    {"regular-expression-relaxed": "irct[ -]?[0-9a-z]+",
+     "regular-expression-strict": "irct[0-9a-z]+",
+     "regular-expression-cleanup": ["irct[ -]([0-9a-z]+)", "irct\\1"],
+     "doi": "10.18810/irct"},
+
+    {"regular-expression-relaxed": "kct[ -]?\\d+",
+     "regular-expression-strict": "kct\\d+",
+     "regular-expression-cleanup": ["kct[- ]?(\\d+)", "kct\\1"],
+     "doi": "10.18810/cris"},
+
+    {"regular-expression-relaxed": "rpcec[ -]?\\d+",
+     "regular-expression-strict": "rpcec\\d+",
+     "regular-expression-cleanup": ["rpcec[- ]?(\\d+)", "rpcec\\1"],
+     "doi": "10.18810/rpec"},
+
+    {"regular-expression-relaxed": "tctr[ -]?\\d+",
+     "regular-expression-strict": "tctr\\d+",
+     "regular-expression-cleanup": ["tctr[- ]?(\\d+)", "tctr\\1"],
+     "doi": "10.18810/tctr"}]

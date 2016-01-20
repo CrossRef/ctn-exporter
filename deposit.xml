@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.6" xmlns="http://www.crossref.org/doi_resources_schema/4.3.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.crossref.org/doi_resources_schema/4.3.6"> 
+   <head> 
+     <doi_batch_id>NA</doi_batch_id> 
+     <depositor> 
+        <depositor_name>NA</depositor_name>
+      <email_address>NA</email_address> 
+     </depositor> 
+   </head> 
+   <body>
+   
+   <clinicaltrial_data>
+     <doi>{doi}</doi>
+     <program xmlns="http://www.crossref.org/clinicaltrials.xsd">
+       <clinical-trial-number registry="{registry}">{ctn}</clinical-trial-number>                            
+     </program>
+   </clinicaltrial_data>  
+   </body>
+</doi_batch>
